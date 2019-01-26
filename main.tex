@@ -1,0 +1,75 @@
+%% Copyright 2007-2018 Elsevier Ltd
+%% 
+% Modified by Hu Muyuan 
+% updated at 2018-08-20 03:48:27
+
+
+
+%%==================================================
+%% thesis.tex
+%%==================================================
+
+% 双面打印
+% \documentclass[doctor, openright, twoside]{tjuthesis}
+\documentclass[doctor, openright, twoside,fontset=mac]{template/tjuthesis/tjuthesis}
+
+% \documentclass[bachelor, openany, oneside, submit]{tjuthesis}
+% \documentclass[master, review]{tjuthesis}
+% \documentclass[%
+%   bachelor|master|doctor|coursepaper, % 必选项，分别是学士，硕士，博士学位论文以及课程论文
+%   fontset=fandol|windows|mac|ubuntu|adobe|founder, % 字体选项
+%   oneside|twoside,        % 单面打印，双面打印(奇偶页交换页边距，默认)
+%   openany|openright,      % 可以在奇数或者偶数页开新章|只在奇数页开新章(默认)
+%   english,                % 启用英文模版
+%   review,     % 盲审论文，隐去作者姓名、学号、导师姓名、致谢、发表论文和参与的项目
+%   submit      % 定稿提交的论文，插入签名扫描版的原创性声明、授权声明
+% ]
+
+
+% 逐个导入参考文献数据库
+\addbibresource{references/references.bib}
+% \addbibresource{bib/chap2.bib}
+
+\input{sections/frontmatters/id}  % NOTE: the enclosed commands must be executed in preamble
+
+\begin{document}
+
+% 无编号内容：中英文论文封面、授权页
+% \maketitle
+
+
+
+% \makeatletter
+
+
+%   % \input{sections/frontmatters/scans}
+
+%   \frontmatter % 使用罗马数字对前言编号
+
+%   % % 摘要
+%   % \include{sections/frontmatters/abstract}
+%   % % 主要符号、缩略词对照表
+%   % \include{sections/frontmatters/symbol} 
+
+% \makeatother
+
+
+\mainmatter % 使用阿拉伯数字对正文编号
+
+% 正文内容
+\include{sections/test}
+% \include{tex/intro}
+% \include{tex/example}
+% \include{tex/faq}
+% \include{tex/summary}
+
+% \input{sections/backmatters/appendix}
+
+
+\backmatter % 文后无编号部分
+\printbibliography
+
+% \input{sections/backmatters/backmatters}
+
+
+\end{document}
