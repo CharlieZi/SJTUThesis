@@ -271,7 +271,7 @@
 \renewcommand{\labelitemi}{\ensuremath{\bullet}}
 
 %% Graphic path & file extension
-\graphicspath{{fig/}{figure/}{figures/}{logo/}{logos/}{graph/}{graphs}}
+\graphicspath{{fig/}{example/figure/}{figures/}{logo/}{logos/}{graph/}{graphs}}
 \DeclareGraphicsExtensions{.pdf,.eps,.png,.jpg,.jpeg}
 
 % Caption setting in caption and bicaption pacakge
@@ -756,7 +756,7 @@
   %% 前言页眉页脚
   \fancypagestyle{front}{%
     \fancyhf{}
-    \fancyhead[L]{\includegraphics{figure/tjubanner}}
+    \fancyhead[L]{\includegraphics{example/figure/tjubanner}}
     \fancyhead[R]{\parbox[b]{\markboxwidth}{\raggedleft\nouppercase{\tju@fancyhead\tju@value@titlemark}}}
     \fancyfoot[C]{\tju@fancyfoot{\thepage}{\lastpageref{pagesLTS.Roman}}}
     \renewcommand{\headheight}{32pt}
@@ -764,7 +764,7 @@
   %% 正文页眉页脚
   \fancypagestyle{main}{%
     \fancyhf{}
-    \fancyhead[L]{\includegraphics{figure/tjubanner}}
+    \fancyhead[L]{\includegraphics{example/figure/tjubanner}}
     \fancyhead[R]{\parbox[b]{\markboxwidth}{\raggedleft\nouppercase{\tju@fancyhead\tju@value@titlemark}}}
     \fancyfoot[C]{\tju@fancyfoot{\thepage}{\lastpageref{pagesLTS.arabic}}}
     \renewcommand{\headheight}{32pt}
@@ -775,7 +775,7 @@
     %% 前言页眉页脚
     \fancypagestyle{front}{%
       \fancyhf{}
-      \fancyhead[L]{\includegraphics{figure/tjubanner}}
+      \fancyhead[L]{\includegraphics{example/figure/tjubanner}}
       \fancyhead[R]{\parbox[b]{\markboxwidth}{\raggedleft\nouppercase{\tju@fancyhead\tju@value@titlemark}}}
       \fancyfoot[C]{\tju@fancyfoot{\thepage}{\lastpageref{pagesLTS.Roman}}}
       \renewcommand{\headheight}{32pt}
@@ -783,7 +783,7 @@
     %% 正文页眉页脚
     \fancypagestyle{main}{%
       \fancyhf{}
-      \fancyhead[L]{\includegraphics{figure/tjubanner}}
+      \fancyhead[L]{\includegraphics{example/figure/tjubanner}}
       \fancyhead[R]{\parbox[b]{\markboxwidth}{\raggedleft\nouppercase{\tju@fancyhead\tju@value@titlemark}}}
       \fancyfoot[C]{\tju@fancyfoot{\thepage}{\lastpageref{pagesLTS.arabic}}}
       \renewcommand{\headheight}{32pt}
@@ -791,7 +791,7 @@
     %% 英文大摘要
     \fancypagestyle{biglast}{%
       \fancyhf{}
-      \fancyhead[L]{\includegraphics{figure/tjubanner}}
+      \fancyhead[L]{\includegraphics{example/figure/tjubanner}}
       \fancyhead[R]{\parbox[b]{\markboxwidth}{\raggedleft\nouppercase{\tju@fancyhead\tju@value@titlemark}}}
       \fancyfoot[C]{\tju@fancyfoot{\theCurrentPageLocal}{\lastpageref{pagesLTS.roman.local}}}
       \renewcommand{\headheight}{32pt}

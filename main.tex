@@ -1,17 +1,19 @@
-%% Copyright 2007-2018 Elsevier Ltd
 %% 
+%% muyuanhu@tongji.edu.cn
+%
 % Modified by Hu Muyuan 
 % updated at 2018-08-20 03:48:27
 
 
 
 %%==================================================
-%% thesis.tex
+%% main.tex
 %%==================================================
 
 % 双面打印
 % \documentclass[doctor, openright, twoside]{tjuthesis}
-\documentclass[doctor, openright, twoside,fontset=mac]{template/tjuthesis/tjuthesis}
+\documentclass[doctor, openright, twoside, submit]{template/tjuthesis/tjuthesis}
+% \documentclass[doctor, openright, twoside,fontset=mac]{template/tjuthesis/tjuthesis}
 
 % \documentclass[bachelor, openany, oneside, submit]{tjuthesis}
 % \documentclass[master, review]{tjuthesis}
@@ -27,49 +29,72 @@
 
 
 % 逐个导入参考文献数据库
-\addbibresource{references/references.bib}
-% \addbibresource{bib/chap2.bib}
+    \addbibresource{references/references.bib}
 
-\input{sections/frontmatters/id}  % NOTE: the enclosed commands must be executed in preamble
 
+    
+% 变量定义
+    \input{sections/frontmatters/variable}
+
+
+
+
+% % ---------------------------------------------------
+% documant definition 
+% updated at 2018-08-20 03:31:53
+% 
 \begin{document}
 
-% 无编号内容：中英文论文封面、授权页
-% \maketitle
+% 标题页
+    \maketitle
 
 
+% 前文内容
+    \makeatletter
 
-% \makeatletter
-
-
-%   % \input{sections/frontmatters/scans}
-
-%   \frontmatter % 使用罗马数字对前言编号
-
-%   % % 摘要
-%   % \include{sections/frontmatters/abstract}
-%   % % 主要符号、缩略词对照表
-%   % \include{sections/frontmatters/symbol} 
-
-% \makeatother
+        % \input{sections/frontmatters/scans}
 
 
-\mainmatter % 使用阿拉伯数字对正文编号
+        % 使用罗马数字对前言编号
+            \frontmatter 
+
+        % 摘要
+            % \include{sections/frontmatters/abstract}
+        % 主要符号、缩略词对照表
+            % \include{sections/frontmatters/symbol} 
+
+    \makeatother
 
 % 正文内容
-\include{sections/test}
-% \include{tex/intro}
-% \include{tex/example}
-% \include{tex/faq}
-% \include{tex/summary}
-
-% \input{sections/backmatters/appendix}
+    \mainmatter 
 
 
-\backmatter % 文后无编号部分
-\printbibliography
+    \include{sections/test}
+    % \include{example/tex/intro}
+    % \include{example/tex/example}
+    % \include{example/tex/faq}
+    % \include{example/tex/summary}
 
-% \input{sections/backmatters/backmatters}
+
+% 附录内容
+    % \input{sections/backmatters/appendix}
+
+
+% 文后材料
+    \backmatter 
+
+    % 参考文献
+        \printbibliography
+
+    % 个人信息
+        % \input{sections/backmatters/backmatters}
 
 
 \end{document}
+\endinput
+
+
+% % ---------------------------------------------------
+% Main End
+% updated at 2018-08-20 03:28:02
+% % ---------------------------------------------------

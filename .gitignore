@@ -1,5 +1,5 @@
 # See https://github.com/github/gitignore/blob/master/TeX.gitignore
-## Core latex/pdflatex auxiliary files:
+## Core laexample/tex/pdflatex auxiliary files:
 *.aux
 *.lof
 *.log
@@ -24,7 +24,7 @@
 ## Generated if empty string is given at "Please type another file name for output:"
 .pdf
 
-## Bibliography auxiliary files (bibtex/biblatex/biber):
+## Bibliography auxiliary files (bibexample/tex/biblaexample/tex/biber):
 *.bbl
 *.bcf
 *.blg
@@ -164,7 +164,7 @@ _minted*
 # sympy
 *.sout
 *.sympy
-sympy-plots-for-*.tex/
+sympy-plots-for-*.example/tex/
 
 # pdfcomment
 *.upa
